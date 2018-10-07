@@ -507,6 +507,9 @@ li {
     letter-spacing: 1px;
     text-transform: uppercase; }
   footer .social-links a {
+    text-decoration: none;
     margin-right: 1.5em; }
   footer .social-links a img {
-    height: 32px; } }
+    height: 32px; }
+  footer .social-links a img path {
+    fill: #303030; } }
