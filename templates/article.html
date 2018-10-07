@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <main class="wrapper">
+        <img src="{{ SITE_URL }}/theme/img/skyline.png" class="skyline">
+        <div class="content">
+            <h2 class="section-title">{{ article.title }}</h2>
+            <article>
+                {{ article.content }}
+            </article>
+        </div>
+    </main>
+{% endblock main %}

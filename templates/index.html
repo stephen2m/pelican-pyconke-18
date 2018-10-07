@@ -1,210 +1,127 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    </head>
-    <body class="home">
+{% extends "base.html" %}
 
-        <!-- Header -->
-        <header class="wrapper clearfix">
-            <a href="" class="logo"><img src="img/logo.svg"></a>
-            <!-- Navigation -->
-            <nav>
-                <ul>
-                    <li><a href="#">Speakers</a></li>
-                    <li><a href="#">Talks</a></li>
-                    <li><a href="#" class="active">Workshops</a></li>
-                    <li><a href="#">Schedule</a></li>
-                    <li><a href="#">Sponsors</a></li>
-                    <li><a href="#">Location</a></li>
-                    <li><a href="#">About Pycon</a></li>
-                </ul>
-                <a href="#"><img src="img/search-icon.svg" class="search-icon"></a>
-            </nav>
-        </header>
-        <!-- /Header -->
+{% block main %}
+<!-- Main Container -->
+<main class="wrapper">
+    <section class="description-block">
+        <article>
+            <h1>
+                DATA SCIENCE <span>/</span> AI <span>/</span><br>
+                INTERNET OF THINGS <span>/</span> <br>
+                WEB <span>/</span> MUSIC <span>/</span> ANIMATION
+            </h1>
+        </article>
+        <article>
+            <h2>25 &mdash; 26 Oct. 2018 <em>@USIU-Africa</em></h2>
+        </article>
+    </section>
 
-        <!-- Main Container -->
-        <main class="wrapper">
-            <section class="description-block">
-                <article>
-                    <h1>
-                        DATA SCIENCE <span>/</span> AI <span>/</span><br>
-                        INTERNET OF THINGS <span>/</span> <br>
-                        WEB <span>/</span> MUSIC <span>/</span> ANIMATION
-                    </h1>
-                </article>
-                <article>
-                    <h2>25 &mdash; 26 Oct. 2018 <em>@USIU-Africa</em></h2>
-                </article>
-            </section>
-
-            <section class="purchase-block">
-                <article>
-                    <h3>Be part of a tech movement</h3>
-                    <p>The first convention in Kenya bringing together techies,
-                    business people, startups, learning institutions, students
-                    and other organizations or individuals with an interest in
-                    the Python programming language and its ecosystem.</p>
-                </article>
-                <ol class="ticket-categories">
-                    <li>
-                        <h3>Early Bird</h3>
-                        <p class="price">KES 1,000</p>
-                        <a href="" class="button">Get Tickets</a>
-                    </li>
-                    <li>
-                        <h3>Day Pass</h3>
-                        <p class="price">KES 1,500</p>
-                        <a href=""class="button">Get Tickets</a>
-                    </li>
-                    <li>
-                        <h3>Season Pass</h3>
-                        <p class="price">KES 3,000</p>
-                        <a href="" class="button">Get Tickets</a>
-                    </li>
-                </ol>   
-            </section>
-            <section class="topics">
-                <h2 class="section-title">Themes</h2>
-                <div class="content">
-                    <article>
-                        <h3>DATA SCIENCE &amp; AI</h3>                            
-                        <p>Data Science &amp; AI Stats crunching with Pandas &amp; co. and ML with with tools like Tensorflow. Come partake in some pythonic stats & AI (just don't let what you subsequently create become self aware).</p>
-                    </article>
-                    <article>
-                        <h3>Internet of Things</h3>
-                        <p>Python in my IoT? It&rsquo;s more likely than you think! Feauted at the conference will be talks and presentations on (micro) python on assorted hardware with example applications.</p>
-                    </article>
-                    <article>
-                        <h3>Web, Music &amp; Animation</h3>                            
-                        <p>Pythonic web frameworks, scripting in animation with Blender and coding music in Py with sonicpi. Plenty of talks and tutorials on these to get you started.</p>
-                    </article>
+    <section class="purchase-block">
+        <article>
+            <h3>Be part of a tech movement</h3>
+            <p>The first convention in Kenya bringing together techies,
+                business people, startups, learning institutions, students
+                and other organizations or individuals with an interest in
+                the Python programming language and its ecosystem.</p>
+        </article>
+        <ol class="ticket-categories">
+            <li>
+                <h3>Early Bird</h3>
+                <p class="price">KES 1,000</p>
+                <a href="" class="button">Get Tickets</a>
+            </li>
+            <li>
+                <h3>Day Pass</h3>
+                <p class="price">KES 1,500</p>
+                <a href="" class="button">Get Tickets</a>
+            </li>
+            <li>
+                <h3>Season Pass</h3>
+                <p class="price">KES 3,000</p>
+                <a href="" class="button">Get Tickets</a>
+            </li>
+        </ol>
+    </section>
+    <section class="topics">
+        <h2 class="section-title">Themes</h2>
+        <div class="content">
+            <article>
+                <h3>DATA SCIENCE &amp; AI</h3>
+                <p>Data Science &amp; AI Stats crunching with Pandas &amp; co. and ML with tools like Tensorflow.
+                    Come partake in some pythonic stats & AI (just don't let what you subsequently create become self
+                    aware).</p>
+            </article>
+            <article>
+                <h3>Internet of Things</h3>
+                <p>Python in my IoT? It&rsquo;s more likely than you think! Featured at the conference will be talks and
+                    presentations on (micro) python on assorted hardware with example applications.</p>
+            </article>
+            <article>
+                <h3>Web, Music &amp; Animation</h3>
+                <p>Pythonic web frameworks, scripting in animation with Blender and coding music in Py with sonicpi.
+                    Plenty of talks and tutorials on these to get you started.</p>
+            </article>
+        </div>
+    </section>
+    <hr>
+    <section class="sponsors">
+        <h2 class="section-title">Sponsors</h2>
+        <ul class="sponsor-grid">
+            <li>
+                <img src="{{ SITE_URL }}/theme/img/jumo.svg" alt="Jumo Logo" />
+            </li>
+            <li>
+                <img src="{{ SITE_URL }}/theme/img/usiu.svg" alt="USIU Logo" />
+            </li>
+            <li>
+                <img src="{{ SITE_URL }}/theme/img/ona.svg" alt="Ona Logo" />
+            </li>
+            <li>
+                <img src="{{ SITE_URL }}/theme/img/intel.svg" alt="Intel Logo">
+            </li>
+            <li>
+                <img src="{{ SITE_URL }}/theme/img/africastalking.svg" alt="Africa's Talking Logo" />
+            </li>
+        </ul>
+    </section>
+    <section class="get-involved">
+        <h2 class="section-title">Get Involved</h2>
+        <ul class="get-involved-grid">
+            <li>
+                <div class="card-bottom">
+                    <h3>Apply to <br>volunteer</h3>
+                    <hr>
+                    <p>Extra hands are always welcome!</p>
                 </div>
-            </section>
-            <hr>
-            <section class="sponsors">
-                <h2 class="section-title">Sponsors</h2>
-                <ul class="sponsor-grid">
-                    <li>
-                        <img src="https://www.filepicker.io/api/file/8gDICu9OQPOBqssHwvg1/convert?" alt="Jumo Logo">
-                    </li>
-                    <li>
-                        <img src="http://www.usiu.ac.ke/templates/usiuhomepagetemplate/images/logo-new.png" alt="USIU Logo">
-                    </li>
-                    <li>
-                        <img src="https://blog.ona.io/assets/images/ona-logo.png" alt="Ona Logo">
-                    </li>
-                    <li>
-                        <img src="http://logos-download.com/wp-content/uploads/2016/02/Intel_white_logo.png" alt="Intel Logo">
-                    </li>
-                    <li>
-                        <img src="https://cdn-images-1.medium.com/max/532/1*epZGySCPZEWLnJEnP5Dqfw@2x.png" alt="Africa's Talking Logo">
-                    </li>
-                </ul>
-            </section>
-            <hr>
-            <section class="speakers">
-                <h2 class="section-title">Featured Speakers</h2>
-                <ul class="speaker-grid">
-                    <li>
-                        <img src="img/speaker.png">
-                        <div class="card-bottom">
-                            <hr>
-                            <h3>Speaker Name Here</h3>
-                            <p>Title, Company</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/speaker.png">
-                        <div class="card-bottom">
-                            <hr>
-                            <h3>Speaker Name Here</h3>
-                            <p>CTO Guy</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/speaker.png">
-                        <div class="card-bottom">
-                            <hr>
-                            <h3>Speaker Name Here</h3>
-                            <p>CTO Guy</p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/speaker.png">
-                        <div class="card-bottom">
-                            <hr>
-                            <h3>Speaker Name Here</h3>
-                            <p>CTO Guy</p>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-            <section class="get-involved">
-                <h2 class="section-title">Get Involved</h2>
-                <ul class="get-involved-grid">
-                    <li>
-                        <div class="card-bottom">
-                            <h3>Apply to <br>volunteer</h3>
-                            <hr>
-                            <p>Extra hands are always welcome!</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card-bottom">
-                            <h3>Apply to <br>be a speaker</h3>
-                            <hr>
-                            <p>We are always looking out for people with fresh ideas</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card-bottom">
-                            <h3>Submit a <br>proposal</h3>
-                            <hr>
-                            <p>We are always looking out for people with fresh ideas</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="card-bottom">
-                            <h3>Become a <br>sponsor</h3>
-                            <hr>
-                            <p>We are always looking out for people with fresh ideas</p>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-            
-        </main>
-        <!-- /Main Container -->
+            </li>
+            <li>
+                <div class="card-bottom">
+                    <h3>Apply to <br>be a speaker</h3>
+                    <hr>
+                    <p>We are always looking out for people with fresh ideas</p>
+                </div>
+            </li>
+            <li>
+                <div class="card-bottom">
+                    <h3>Submit a <br>proposal</h3>
+                    <hr>
+                    <p>We are always looking out for people with fresh ideas</p>
+                </div>
+            </li>
+            <li>
+                <div class="card-bottom">
+                    <h3>Become a <br>sponsor</h3>
+                    <hr>
+                    <p>We are always looking out for people with fresh ideas</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+</main>
+<!-- /Main Container -->
+{% endblock main %}
 
-        <!-- Footer -->
-        <footer>
-            <form class="subscribe-form">
-                <h3>Stay up to date</h3>
-                <p>Receive notifications everytime there are new developments</p>
-                <input type="email" placeholder="Enter email address">
-                <button>send</button>
-            </form>
-            <nav class="social-links">
-                <h3>Connect on social media</h3>
-                <p>Engage through our social media accounts</p>
-                <a href="" class="twitter"><img src="img/twitter-square.svg"></a>
-                <a href="" class="facebook"><img src="img/facebook-square.svg"></a>
-                <a href="" class="linkedin"><img src="img/linkedin-in.svg"></a>
-                <a href="" class="instagram"><img src="img/instagram.svg"></a>
-                <a href="" class="youtube"><img src="img/youtube-square.svg"></a>
-                <a href="" class="github"><img src="img/github-square.svg"></a>
-            </nav>
-        </footer>
-        <!-- /Footer -->
 
-    </body>
-</html>
+{% block footerleft %}
+
+{% endblock footerleft %}
