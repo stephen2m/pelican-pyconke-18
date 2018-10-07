@@ -456,12 +456,12 @@ li {
     border: 0;
     border-bottom: 1px solid rgba(98, 98, 232, 0.5); }
   .sponsors {
+    text-align: center;
+    color: #000;
     background-color: #fff;
     margin-left: -5vw;
     padding: 3em 5vw 5em;
     width: 105vw; }
-    .sponsors .sponsor-grid {
-      margin-top: 3em; }
       .sponsors .sponsor-grid li {
         display: inline-block;
         margin-right: 2.5em; }
