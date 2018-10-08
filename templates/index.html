@@ -25,21 +25,13 @@
                 the Python programming language and its ecosystem.</p>
         </article>
         <ol class="ticket-categories">
+            {% for description, price, link in NAVITEMS %}
             <li>
-                <h3>Early Bird</h3>
-                <p class="price">KES 1,000</p>
-                <a href="" class="button">Get Tickets</a>
+                <h3>{{ description|replace('_',' ')|title }}</h3>
+                <p class="price">KES {{ price }}</p>
+                <a href="{{ link }}" class="button" target="_blank">Get Tickets</a>
             </li>
-            <li>
-                <h3>Day Pass</h3>
-                <p class="price">KES 1,500</p>
-                <a href="" class="button">Get Tickets</a>
-            </li>
-            <li>
-                <h3>Season Pass</h3>
-                <p class="price">KES 3,000</p>
-                <a href="" class="button">Get Tickets</a>
-            </li>
+            {% endfor %}
         </ol>
     </section>
     <section class="topics">
